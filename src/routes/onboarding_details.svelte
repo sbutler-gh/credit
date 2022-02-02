@@ -1,11 +1,5 @@
 <script>
     import BusinessDetailsForm from "$lib/components/BusinessDetailsForm.svelte";
-import BusinessSignUpForm from "$lib/components/BusinessSignUpForm.svelte";
-import BuyingRequestForm from "$lib/components/BuyingRequestForm.svelte";
-import InquiriesForm from "$lib/components/InquiriesForm.svelte";
-import SignUpForm from "$lib/components/SignUpForm.svelte";
-import SupplierSignUpForm from "$lib/components/SupplierSignUpForm.svelte";
-
 let display;
 </script>
 <!-- <hr>
