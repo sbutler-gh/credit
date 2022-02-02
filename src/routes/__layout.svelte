@@ -2,6 +2,9 @@
   import "../app.css";
   import Header from "$lib/components/Header.svelte";
 </script>
+<svelte:head>
+  <title>Lancaster's Trade Credit Mutual</title>
+</svelte:head>
   <Header></Header>
   <div class="main m-auto mb-8">
 <slot></slot>
