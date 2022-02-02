@@ -15,7 +15,8 @@
         </p>
 
     <h3 class="text-lg my-4">Loops allow clearing</h3>
-    <img class="w-full" src="src/lib/3loop-table-after 1.png">
+    <!-- <img class="w-full" src="src/lib/3loop-table-after 1.png"> -->
+    <img class="w-full md:w-6/12 m-auto" src="https://i.imgur.com/ZhaJBOv.png">
     <p class="text-left">The smallest debt can be cleared around a loop with credit notes. There can be hundreds of loops.</p>
 
 

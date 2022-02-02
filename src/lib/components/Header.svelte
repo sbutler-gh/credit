@@ -27,7 +27,7 @@ import { onMount } from "svelte";
 <div class="header w-12/12 p-2 sm:w-10/12 m-auto">
     <div class="text-center mt-4">
         <!-- <a href="/" class="ml-8 text-lg text-left font-semibold"></a> -->
-        {#if $page.path == "/"}
+        <!-- {#if $page.path == "/"}
         <h2 class="text-xl text-center font-semibold mt-4 mb-2">Welcome to</h2>
         <a href="/" class="text-xl mb-4 block m-auto text-orange-700 text-center">{@html clearing_union}</a>
         <h3 class="text-center text mt-4 mb-4 font-semibold">This is where you can find out more</h3>
@@ -37,6 +37,24 @@ import { onMount } from "svelte";
         <hr class="w-10/12 m-auto">
         <h2 class="text-xl text-center font-semibold mt-4">{main_title}</h2>
         <h3 class="text-center text-sm mt-4 mb-4 font-semibold">{details_title}</h3>
+        {/if} -->
+
+        {#if $page.path == "/"}
+        <h2 class="text-xl text-center font-semibold mt-4 mb-2">Welcome to</h2>
+        <a href="/" class="text-xl mb-4 block m-auto text-orange-700 text-center">{@html clearing_union}</a>
+        <h3 class="text-center text mt-4 mb-4 font-semibold">This is where you can find out more</h3>
+
+        {:else if $page.path == "/onboarding"}
+        <a href="/" class="text-xl mb-4 block m-auto text-orange-700 text-center">{@html clearing_union}</a>
+        <hr class="w-10/12 m-auto">
+        <h2 class="text-xl text-center font-semibold mt-4">Your Business</h2>
+        <h3 class="text-center text-sm mt-4 mb-4 font-semibold">- we only need a little information to get started - first, the basics</h3>
+
+        {:else if $page.path == "/onboarding_details"}
+        <a href="/" class="text-xl mb-4 block m-auto text-orange-700 text-center">{@html clearing_union}</a>
+        <hr class="w-10/12 m-auto">
+        <h2 class="text-xl text-center font-semibold mt-4">The Details</h2>
+        <h3 class="text-center text-sm mt-4 mb-4 font-semibold">- this information is optional but can help us build a better network</h3>
         {/if}
   
         <!-- <div class="ml-auto w-8/12 sm:hidden">
